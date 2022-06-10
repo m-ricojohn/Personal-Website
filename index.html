@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perosnal Website</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script/script.js"></script>
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
     <link rel="stylesheet" href="css/TopNav.css">
     <link rel="stylesheet" href="css/Index.css">
@@ -65,19 +66,25 @@
         <div class="profile_container">
           <div class="profile_body">
             <div class="profile_img">
-              <img src="images/homepage_img.png" alt="hm_img">
+              <img src="images/resume_img.png" alt="hm_img">
               <h1 class="profile_title">Rico John Macate</h1>
               <span class="profile_details">Taguig, Philippines</span>
+              <button class="btn" onclick="document.getElementById('link').click()"><i class='bx bxs-download'></i>Curriculum Vitae</button>
+              <a id="link" href="items/CV.docx" download hidden></a>
               <br> <span class="profile_job">Job Experience</span>
-              <p>I.T Staff | April 2022 - Present</p>
+              <p>I.T Staff | Barangay Western Bicutan <br> April 2022 - Present</p>
             </div>
             <div class="profile_content">
               <h1 class="profile_title">About Me</h1>
-              <p class="profile_text">Currently a 3rd Year BSIT Student at STI College Global City</p>
+              <p class="profile_text">Hi! I’m Rico currently a 3rd Year BSIT Student at STI College Global City with a goal in mind which is to become an I.T Professional.
+                <br><br>I have acquired a lot of skills but I’m no master of all meaning “Jack of all trades, master of none.” 
+                </p>
               <div class="profile_skills">
-                <img src="images/skills.jfif" alt="skills_image">
+                <h1 class="prof_skills"> Skills</h1>
+                <div class="skills_img">
+                  <img src="images/skills.png" alt="skills_img">
+                </div>        
               </div>     
-              <p></p>  
             </div>
           </div>
         </div>
