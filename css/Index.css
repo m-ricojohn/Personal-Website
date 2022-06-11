@@ -9,7 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* Homepage CSS */
+/* Homepage Scection CSS */
 
 .homepage {
     min-height: calc(110vh - 80px);
@@ -125,9 +125,20 @@ html {
     transition: .3s;
   }
 
-#project_sec{
-  height: 800px;
+/* Project Section CSS */
+#project_sec {
+  height: 1000px;
 }
+
+
+
+
+/* Contact Section CSS */
+
+#contact_sec {
+  height: 1000px;
+}
+
 
 /* Media / Responsive */
 @media (max-width: 1023px) {

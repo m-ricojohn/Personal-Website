@@ -7,7 +7,9 @@
 }
 
 /* profile CSS */
-
+#profile_sec {
+  height: 1000px;
+}
 .profile {
     min-height: calc(110vh - 80px);
     display: flex;
@@ -154,7 +156,7 @@
       font-size: 18px;
       margin-bottom: 20px;
     }
-    .profile_txt {
+    .profile_text {
       font-size: 14px;
       margin-bottom: 20px;
     }
@@ -189,7 +191,7 @@
     .profile_details {
       text-align: center;
     }
-    .profile_txt {
+    .profile_text {
       text-align: center;
     }
     .profile_btn {
