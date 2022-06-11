@@ -40,17 +40,6 @@
               <div class="homepage_btn">
                 <a href="Contact.html" class="btn">Contact Me <i class='bx bxs-chevrons-right' ></i></a>
               </div>
-              <div class="homepage_socials home-soc">
-                <div class="home-soc_item">
-                  <a href="#" title="gm-icon" class="home-soc_link"><i class='bx bxl-gmail'></i></a>
-                </div>
-                <div class="home-soc_item">
-                  <a href="#" title="fb-icon" class="home-soc_link"><i class='bx bxl-facebook-square'></i></a>
-                </div>
-                <div class="home-soc_item">
-                  <a href="#" title="ig-icon" class="home-soc_link"><i class='bx bxl-instagram' ></i></a>
-                </div>
-              </div>
             </div>
             <div class="homepage_img">
               <img src="images/homepage_img.png" alt="hm_img">
@@ -69,9 +58,11 @@
               <img src="images/resume_img.png" alt="hm_img">
               <h1 class="profile_title">Rico John Macate</h1>
               <span class="profile_details">Taguig, Philippines</span>
-              <button class="btn" onclick="document.getElementById('link').click()"><i class='bx bxs-download'></i>Curriculum Vitae</button>
-              <a id="link" href="items/CV.docx" download hidden></a>
-              <br> <span class="profile_job">Job Experience</span>
+              <div class="btn_cv__div">
+                <button class="btn_cv" onclick="document.getElementById('link').click()"><i class='bx bxs-download'></i>Curriculum Vitae</button>
+                <a id="link" href="items/CV.docx" download hidden></a>
+              </div>    
+              <br> <span class="profile_job">Job Experience</span>     
               <p>I.T Staff | Barangay Western Bicutan <br> April 2022 - Present</p>
             </div>
             <div class="profile_content">
@@ -82,7 +73,7 @@
               <div class="profile_skills">
                 <h1 class="prof_skills"> Skills</h1>
                 <div class="skills_img">
-                  <img src="images/skills.png" alt="skills_img">
+                  <img src="images/skills.png" class="skills_png" alt="skills_img">
                 </div>        
               </div>     
             </div>
@@ -97,7 +88,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact_sec">
+    <section id="contact_sec">
 
     </section>
   </body>

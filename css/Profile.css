@@ -31,6 +31,7 @@
 
 }
 
+
 .profile_content {
     max-width: 600px;
     width: 100%;
@@ -38,7 +39,7 @@
 }
 
 .profile_skills {
-    max-width: 250px;
+    max-width: 600px;
     width: 100%;
     margin-top: 20px;
 }
@@ -56,13 +57,19 @@
 }
 
 .skills_img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills_img {
   max-width: 800px;
   width: 100%;
 }
 
 .skills_img img {
   display: block;
-  width: 200%;
+  width: 100%;
 }
 .profile_title {
     font-weight: 600;
@@ -109,7 +116,7 @@
   margin-bottom: 30px;
 }
 
-.btn {
+.btn_cv {
     display: inline-flex;
     background: transparent;
     border: 2px solid var(--primary-color);
@@ -123,27 +130,15 @@
     transition: .3s;
   }
 
-.btn .bx {
+.btn_cv .bx {
     font-size: 24px;
 }
-
-.bxl-java {
-  font-size: 40px;
-}
-.bxs-circle, .bx-circle, .bxs-circle-half {
-  font-size: 18px;
-}
-.prof_circ {
-  border-style: solid;
-  border-width: 1px;
-  padding: 0 3px 0 3px;
-}
-
-.btn:hover {
+.btn_cv:hover {
     background: var(--primary-color);
     color: var(--white-color);
     transform: scale(1.05);
 }
+
 
 
 
@@ -160,13 +155,10 @@
       font-size: 14px;
       margin-bottom: 20px;
     }
-    .home-soc {
-      margin-top: 20px;
-    }
-    .btn {
+    .btn_cv {
       font-size: 14px;
     }
-    .btn .bx {
+    .btn_cv .bx {
       font-size: 20px;
     }
 }
@@ -194,11 +186,8 @@
     .profile_text {
       text-align: center;
     }
-    .profile_btn {
+    .btn_cv__div {
       display: flex;
-      justify-content: center;
-    }
-    .home-soc {
       justify-content: center;
     }
 }

@@ -100,36 +100,10 @@ html {
     transform: scale(1.05);
 }
 
-.home-soc {
-    display: flex;
-    margin: 0 -10px;
-    margin-top: 40px;
-    align-items: center;
-}
-
-.home-soc_item {
-    padding: 0 10px;
-}
-
-.home-soc_link {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--primary-color);
-    background: transparent;
-    font-size: 24px;
-    color: var(--primary-color);
-    transition: .3s;
-  }
-
 /* Project Section CSS */
 #project_sec {
   height: 1000px;
 }
-
 
 
 
@@ -152,9 +126,6 @@ html {
     .homepage_txt {
       font-size: 14px;
       margin-bottom: 20px;
-    }
-    .home-soc {
-      margin-top: 20px;
     }
     .btn {
       font-size: 14px;
@@ -189,9 +160,6 @@ html {
     }
     .homepage_btn {
       display: flex;
-      justify-content: center;
-    }
-    .home-soc {
       justify-content: center;
     }
 }
