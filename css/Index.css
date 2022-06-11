@@ -37,7 +37,7 @@ html {
     padding-right: 20px;
 }
 
-.homepage_img {
+.homepage_img, .contact_img {
     max-width: 420px;
     width: 100%;
 }
@@ -61,7 +61,7 @@ html {
     transition: .3s;
 }
 
-.homepage_details, .contact_details {
+.homepage_details {
      display: block;
      font-weight: 500;
      font-size: 24px;
@@ -167,40 +167,38 @@ html {
 
 /* Contact Section CSS */
 
+.contact_details {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
 
+.contact_item {
+  margin-bottom: 12px;
+  transition: .3s;
+}
+
+.contact_img img {
+  display: block;
+  width: 100%;
+}
 
 /* Footer CSS */
-.footer-content p{
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-  color: #cacdd2;
+.footer_sec {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
 }
-.footer-bottom{
-  background: #000;
-  width: 100vw;
-  padding: 20px;
-  padding-bottom: 40px;
-  text-align: center;
+.footer_content {
+  color: #8f9296;
+  font-size: 24px;
+  margin: 0;
 }
-.footer-bottom p{
-  float: left;
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom p a{
- color: var(--light-gray-color);
- font-size: 16px;
- text-decoration: none;
-}
-.footer-bottom span{
-   text-transform: uppercase;
-   opacity: .4;
-   font-weight: 200;
-}
-
 
 /* Media / Responsive */
 @media (max-width: 1023px) {
@@ -221,7 +219,7 @@ html {
     .btn .bx {
       font-size: 20px;
     }
-    .projects-container, .contact_container {
+    .projects-container, .contact_container, .contact_body {
       flex-direction: column;
     }
     .project-container {
@@ -236,7 +234,7 @@ html {
     .homepage_body {
       flex-direction: column-reverse;
     }
-    .homepage_img {
+    .homepage_img, .contact_img {
       margin-bottom: 30px;
     }
     .homepage_content, .contact_content {

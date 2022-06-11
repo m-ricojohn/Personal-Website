@@ -62,7 +62,7 @@
                 <a id="link" href="items/CV.docx" download hidden></a>
               </div>    
               <br> <span class="profile_job">Job Experience</span>     
-              <p class="profile_job__p">I.T Staff | Barangay Western Bicutan <br> April 2022 - Present</p>
+              <p class="profile_job__p">I.T Staff | Barangay Western Bicutan <br> March 2022 - Present</p>
             </div>
             <div class="profile_content">
               <h1 class="profile_title">About Me</h1>
@@ -103,11 +103,12 @@
           <p class="project-details">
             The finished projects throughout my experience as an BSIT Student.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <button class="btn_cv" onclick="document.getElementById('link_it').click()"><i class='bx bxs-download'></i>Portfolio</button>
+          <a id="link_it" href="items/IT_Portfolio.pdf" download hidden></a>
         </div>
         <div class="project-container project-card">
           <img
-            src="images/MM_Projects/AN_MV.jpg"
+            src="images/MM_Projects/hE.jpg"
             alt="mm_proj"
             loading="lazy"
             class="project-pic__mm"
@@ -116,7 +117,8 @@
           <p class="project-details">
             The finished projects under multimedia related stuff as a side hobby.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <button class="btn_cv" onclick="document.getElementById('link_mm').click()"><i class='bx bxs-download'></i>Portfolio</button>
+          <a id="link_mm" href="items/PORTFOLIO.pdf" download hidden></a>
         </div>
       </div>
     </section>
@@ -126,29 +128,25 @@
       <div class="contact">
         <div class="contact_container">
           <div class="contact_body">
+            <div class="contact_img">
+              <img src="images/MM_Projects/AN_MV.jpg" alt="">
+            </div>
             <div class="contact_content">
               <h1 class="contact_title">Contact Me</span></h1>
               <div class="contact_details">
                 <div class="contact_item">
-                  <i class='bx bxs-user'></i>
-                  <div class="contact_name">
-                    <div class="contact_top">Name</div>
-                    <div class="contact_bot">Rico John Macate</div>
-                  </div>
+                  <p class="contact_item__p"><i class='bx bxs-user'></i> &nbsp; Rico John Macate</p>
                 </div>
                 <div class="contact_item">
-                  <i class='bx bxs-home'></i>
+                  <p class="contact_item__p"><i class='bx bxs-home'></i> &nbsp; Taguig, Philippines</p>
                 </div>
                 <div class="contact_item">
-                  <i class='bx bxs-envelope' ></i>
+                  <p class="contact_item__p"><i class='bx bxs-envelope'></i> &nbsp; macate.ricojohn@gmail.com</p>
                 </div>
                 <div class="contact_item">
-                  <i class='bx bxs-phone' ></i>
+                  <p class="contact_item__p"><i class='bx bxs-phone'></i> &nbsp; +639301612868</p>
                 </div>
               </div>
-            </div>
-            <div class="contact_img">
-              <img src="assets/img/intro-img.png" alt="">
             </div>
           </div>
         </div>
@@ -157,13 +155,12 @@
 
     <!-- Footer -->
     
-   <footer class="footer_sec">
-    <div class="footer-content">
-      <p class="footer_top">Foolish Developer ---  source code.</p>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer_bot">copyright <i class='bx bx-copyright'>2022</i> <a href="https://github.com/m-ricojohn">m-ricojohn</a>  </p>
-   </div>
-   </footer>
+    <footer class="footer_sec">
+			<div class="footer_body">
+				<p class="footer_content"> Personal Website</p>
+				<p>m-ricojohn &copy; 2022</p>
+			</div>
+
+		</footer>
   </body>
 </html>
