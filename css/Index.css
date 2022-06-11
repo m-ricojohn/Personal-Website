@@ -4,6 +4,7 @@
     --white-color: #FFFFFF;
     --text-color: #484848;
     --gray-color: #888888;
+    --light-gray-color: #88888879;
 }
 
 html {
@@ -11,26 +12,26 @@ html {
 }
 /* Homepage Scection CSS */
 
-.homepage {
-    min-height: calc(110vh - 80px);
+.homepage, .contact {
+    min-height: calc(110vh - 60px);
     display: flex;
     align-items: center;
 }
 
-.homepage_container {
+.homepage_container, .project_container, .contact_container {
     max-width: 1100px;
     padding: 0 10px;
     width: 100%;
     margin: 0 auto;
   }
-.homepage_body {
+.homepage_body, .project_body, .contact_body {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
 }
 
-.homepage_content {
+.homepage_content, .contact_content {
     max-width: 500px;
     width: 100%;
     padding-right: 20px;
@@ -46,7 +47,7 @@ html {
     width: 100%;
 }
 
-.homepage_title {
+.homepage_title, .contact_title {
     font-weight: 600;
     font-size: 64px;
     line-height: 1.2;
@@ -60,7 +61,7 @@ html {
     transition: .3s;
 }
 
-.homepage_details {
+.homepage_details, .contact_details {
      display: block;
      font-weight: 500;
      font-size: 24px;
@@ -102,24 +103,111 @@ html {
 
 /* Project Section CSS */
 #project_sec {
-  height: 1000px;
+  margin-top: 80px;
+  margin-bottom: 300px;
+}
+.projects {
+  background-color: var(--white-color);
+  padding: 100px 0;
+  margin-top: 2rem;
+}
+
+.project-pic__it {
+  width: 100%;
+  height: 100%;
+}
+.project-pic__mm {
+  width: 78%;
+  height: 60%;
+}
+
+.project_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
 }
 
 
+.project-details {
+  margin-bottom: var(--light-gray-color);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--light-gray-color);
+  padding: 20px;
+  margin: 10px;
+}
+
+.prof_educ__p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  transition: .3s;
+}
 
 /* Contact Section CSS */
 
-#contact_sec {
-  height: 1000px;
+
+
+/* Footer */
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+ color: var(--light-gray-color);
+ font-size: 16px;
+ text-decoration: none;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
 }
 
 
 /* Media / Responsive */
 @media (max-width: 1023px) {
-    .homepage_title {
+    .homepage_title, .contact_title {
       font-size: 42px;
     }
-    .homepage_details {
+    .homepage_details, .contact_details {
       font-size: 18px;
       margin-bottom: 20px;
     }
@@ -133,10 +221,16 @@ html {
     .btn .bx {
       font-size: 20px;
     }
+    .projects-container, .contact_container {
+      flex-direction: column;
+    }
+    .project-container {
+      width: 20.875rem;
+    }
 }
   
 @media (max-width: 767px) {
-    .homepage {
+    .homepage, .contact {
       min-height: calc(100vh - 69px);
     }
     .homepage_body {
@@ -145,14 +239,14 @@ html {
     .homepage_img {
       margin-bottom: 30px;
     }
-    .homepage_content {
+    .homepage_content, .contact_content {
       padding: 0;
     }
-    .homepage_title {
+    .homepage_title, .contact_title {
       font-size: 32px;
       text-align: center;
     }
-    .homepage_details {
+    .homepage_details, .contact_details {
       text-align: center;
     }
     .homepage_txt {
@@ -162,4 +256,20 @@ html {
       display: flex;
       justify-content: center;
     }
+    .project_container {
+      flex-direction: column;
+    }
+    .projects-container {
+      flex-direction: column;
+    }
+    .project-container {
+      width: 20.875rem;
+    }
+}
+@media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
