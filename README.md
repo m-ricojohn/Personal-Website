@@ -1,2 +1,2 @@
 # Personal-Website
-m-ricojohn.github.io/Personal-Website/
+https://m-ricojohn.github.io/Personal-Website/
